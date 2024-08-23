@@ -62,7 +62,9 @@ li {
 
 /*New Arrivals*/
 
-
+.newArrivals {
+    margin: 80px 0px;
+}
 
 .newArrivalsText {
     width: 100%;
@@ -78,6 +80,7 @@ li {
     font-weight: 700;
     font-size: 36px;
     text-decoration: underline;
+    margin: 0px 0px 50px 0px;
 }
 
 .products {
@@ -86,10 +89,15 @@ li {
     justify-content: center;
 }
 
-.box {
+.box,
+.box2,
+.box3,
+.boxthree,
+.boxDuo,
+.boxOne {
     width: 360px;
     height: auto;
-    margin: 50px;
+    margin: 15px;
 }
 
 .imgBox {
@@ -113,11 +121,19 @@ li {
     width: 100%;
     height: 50px;
     background-color: black;
-    color: white;
-    font-size: 16px;
     border: none;
     display: none;
     padding: 15px 120px;
+    cursor: pointer;
+}
+
+.btnImageBox a,
+.btnImageBox2 a,
+.btnImageBox3 a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .titlebox {
@@ -135,4 +151,62 @@ li {
 .titlebox p {
     font-size: 21px;
     margin: 27px 0px 9px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.562);
+}
+
+@media screen and (max-width: 1200px) {
+    .imgBox img {
+        width: 250px;
+    }
+
+    .box,
+    .box2,
+    .box3,
+    .boxthree,
+    .boxDuo,
+    .boxOne {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+    
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgBox  {
+        width: 250px;
+    }
+
+    .box,
+    .box2,
+    .box3,
+    .boxthree,
+    .boxDuo,
+    .boxOne {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
